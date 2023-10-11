@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "f887affe-9b0b-4708-bcb8-e98b017a367e",
+		"name": "employeeApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14118482"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/employees/filter?age=5&title=Manager",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employees/filter?age=5&title=Manager",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "5"
+						},
+						{
+							"key": "title",
+							"value": "Manager"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Karan\",\n  \"address\": \"123 Main St\",\n  \"dob\": \"2009-01-15\",\n  \"phone\": \"555-123-4567\",\n  \"title\": \"Analyst\",\n  \"sin\": \"1289357234\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employees/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employees/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
